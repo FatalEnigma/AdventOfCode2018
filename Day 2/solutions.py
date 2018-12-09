@@ -26,3 +26,4 @@ for a, b in combinations(parsed_values, 2):
     dis_similar_indexes = [counter for counter, (x, y) in enumerate(zip(a, b)) if x != y]
     if len(dis_similar_indexes) == 1:
         print "Common letters between correct box IDs: %s" % a[:dis_similar_indexes[0]] + a[dis_similar_indexes[0] + 1:]
+        break
